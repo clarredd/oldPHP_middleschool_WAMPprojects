@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="socket.js"></script>
+        <title>User Communication System Demo</title>
+    </head>
+    <body>
+        <script>
+			var user;
+            this.onload=function(){
+				var name=prompt("Unesite korisnicko ime");
+				user=new User(name,
+				function(data){alert(data.posiljalac+": "+data.poruka);},
+				function(e){alert("user error "+e);},
+				function(){alert("user disabled");}
+				);
+				document.getElementById("nameP").textContent="username: "+name;
+                this.onerror=function(e){
+                    alert("ERROR "+e);
+					if(!(user.ok)){
+						user.end();
+					}
+					location.reload();
+                };
+				this.onbeforeunload=function(){
+					user.end();
+					return null;
+				};
+            };
+            function send(){
+                user.send(document.getElementById("username").value,document.getElementById("msg").value);
+            }
+        </script>
+		<p id="nameP"></p>
+		<br>
+        <input type="text" id="msg" placeholder="Unesite poruku. " style="width:100%;">
+		<br>
+		<input type="text" id="username" placeholder="Unesite korisnicko ime primaoca. " style="width:100%;">
+		<br>
+        <button onclick="send();" style="width:100%;">posalji</button>
+		<br>
+        <button onclick="user.end();" style="width:100%;">kraj</button>
+    </body>
+</html>

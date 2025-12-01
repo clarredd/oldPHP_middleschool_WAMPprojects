@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+        <meta charset="utf-8">
+        <title>Prikazivač tabela istinitosti</title>
+		<style>
+			td,th{
+				text-align: center;
+			}
+		</style>
+    </head>
+    <body>
+        <form action="main.php">
+            <input type="text" name="req" placeholder="Unesite formulu(e). " style="font-size: 2em;text-align:center;font-family:monospace;">
+			<br>
+			<br>
+            <input type="submit" value="Pokreni">
+		</form>
+		
+		<br>
+		<br>
+		<br>
+		
+		<table border="1">
+			<tbody>
+				<tr><th>Operacija</th><th>Zamena</th></tr>
+                                <!--
+				<tr><td>¬p (ne p)</td><td>!p ili ~p</td></tr>
+				<tr><td>p∧q (p i q)</td><td>p&&q ili p&q</td></tr>
+				<tr><td>p∨q (p ili q)</td><td>p||q ili p|q</td></tr>
+				<tr><td>p⊕q (p ili q ali ne p i q)</td><td>p^q</td></tr>
+                                -->
+				<tr><td>¬p (ne p)</td><td>!p</td></tr>
+				<tr><td>p∧q (p i q)</td><td>p&&q</td></tr>
+				<tr><td>p∨q (p ili q)</td><td>p||q</td></tr>
+			</tbody>
+		</table>
+
+		<br>
+
+		<ul>
+			<li>Razdvojite formule tačkazapetama (;). Razmaci se ne računaju. </li>
+			<li>Program je osetljiv na velika i mala slova. </li>
+			<li>Variable ne moraju imati jedno slovo. </li>
+		</ul>
+																																																																							   
+		
+		<br>
+		<br>
+		<br>
+
+		<small>Made by Marko Jojić</small>
+    </body>
+</html>

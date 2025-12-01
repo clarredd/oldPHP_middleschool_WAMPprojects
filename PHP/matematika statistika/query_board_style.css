@@ -1,0 +1,19 @@
+body,input:not([disabled])/*[type]:not([type="number"])*/{
+	/*
+	background-color: #00aaaa;
+	color: #ffff00;
+	*/
+	background-color: khaki;
+	color: brown;
+}
+input:hover:not([disabled]):not(:focus),summary:hover{
+	cursor: pointer;
+}
+label{
+	cursor: text;
+}
+body{
+	/*cursor: url(myBall.cur),auto;*/
+	padding: 8px; /* default margin */
+	margin: 0px;
+}

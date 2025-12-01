@@ -1,0 +1,52 @@
+{
+	"title":"Anketa - Nasilje",
+	"questions":[
+		{
+			"title":"",
+			"content":[
+				{"text":"Da li si bio žrtva nasilja? ", "answers":["Da","Ne","Nisam siguran"]}
+			]
+		},
+		{
+			"title":"",
+			"content":[
+				{"text":"Koji oblik nasilja je, po vašem mišljenju najčešći? ", "answers":["Psihičko","Fizičko","Elektronsko","Socijalno"]}
+			]
+		},
+		{
+			"title":"",
+			"content":[
+				{"text":"Da li slučajeve nasilja više prijavljuju dečaci ili devojčice? ", "answers":["Dečaci","Devojčice"]}
+			]
+		},
+		{
+			"title":"",
+			"content":[
+				{"text":"Koji oblik nasilja je po vašem mišljenju najopasniji? ", "answers":["Psihičko","Fizičko","Socijalno","Elektronsko","Nasilje je nasilje, bez obzira na vrstu. "]}
+			]
+		},
+		{
+			"title":"",
+			"content":[
+				{"text":"Da li mislite da postoji razlika između žrtava nasilja ako su muškog ili ženskog pola?", "answers":["Da","Ne"]}
+			]
+		},
+		{
+			"title":"Da li bi želeo da sa psihologom\\psihoterapeutom ?? o sledećim temama: ",
+			"content":[
+				{"text":"Emocije", "answers":["Da","Ne"]},
+				{"text":"Problemi sa vršnjacima", "answers":["Da","Ne"]},
+				{"text":"Samopouzdanje", "answers":["Da","Ne"]},
+				{"text":"Depresiji", "answers":["Da","Ne"]},
+				{"text":"Fobija i strahovi", "answers":["Da","Ne"]},
+				{"text":"Porodični problemi", "answers":["Da","Ne"]}
+			]
+		},
+		{
+			"title":"",
+			"content":[
+				{"text":"Da li bi se javio psihologu\\psihoterapeutu ukoliko bi imao neki problem?","answers":["Da","Ne","Nisam siguran/sigurna"]}
+			]
+		}
+	]
+}

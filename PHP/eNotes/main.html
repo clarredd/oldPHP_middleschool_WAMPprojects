@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--script>
+			function empty(){
+				for(let elem of document.getElementsByTagName("input")){
+					//alert("elem "+elem.type);
+					if(!(elem.type==="submit")){
+						//alert("elem2 "+JSON.stringify(elem.value));
+						elem.value="";
+					}
+				}
+			}
+			addEventListener("load",function(){
+				//alert("runned");
+				addEventListener("error",function(e){
+					alert("ERROR "+JSON.stringify(e));
+				});
+				setTimeout(empty,1000);//ako se pokrene odmah, pojave se podrazumevane lozinke
+				empty();
+			});
+		</script-->
+		<title>eNotes</title>
+	</head>
+	<body>
+		<h1>Uloguj se</h1>
+		<form action="login.php">
+			<input type="text" name="korisnicko_ime" placeholder="Unesite korisnicko ime. " required value=""><br>
+			<input type="password" name="lozinka" placeholder="Unesite lozinku. " required value=""><br>
+			<input type="submit" value="Uloguj se">
+		</form>
+		<h1>Registruj se</h1>
+		<form action="register.php">
+			<input type="text" name="korisnicko_ime" placeholder="Unesite korisnicko ime. " required value=""><br>
+			<input type="password" name="lozinka" placeholder="Unesite lozinku. " required value=""><br>
+			<input type="submit" value="Registruj se">
+		</form>
+		<br>
+		<br>
+		<br>
+		<small>Made and developed by Marko Jojic</small>
+	</body>
+</html>
